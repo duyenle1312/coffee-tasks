@@ -46,7 +46,7 @@ export default function ToDoContainer() {
   ))
   return (
     <>
-      <Nav setTodos={setTodos} setFilter={setFilter}/>
+      <Nav setTodos={setTodos} setFilter={setFilter} todos={todos} />
       <div className="bg-coffeePrimaryLight px-5 py-2.5 text-center rounded-md">
         {!todos?.length ? (
           <span className="text-white font-semibold">No ToDos</span>
